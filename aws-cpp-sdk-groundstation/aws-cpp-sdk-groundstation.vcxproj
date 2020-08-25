@@ -1,0 +1,611 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugOpt|x64">
+      <Configuration>DebugOpt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{20E44950-971A-3A10-ADBF-F253B21E2D10}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>aws-cpp-sdk-groundstation</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-groundstation.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-groundstation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\DebugOpt\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-groundstation.dir\DebugOpt\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-groundstation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-groundstation.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-groundstation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-groundstation.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-groundstation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-groundstation.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-groundstation</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Debug";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Debug\";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Debug\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/Debug/aws-cpp-sdk-groundstation.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Debug/aws-cpp-sdk-groundstation.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="DebugOpt";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"DebugOpt\";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\DebugOpt\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/DebugOpt/aws-cpp-sdk-groundstation.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/DebugOpt/aws-cpp-sdk-groundstation.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Release";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Release\";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Release\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/Release/aws-cpp-sdk-groundstation.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Release/aws-cpp-sdk-groundstation.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="RelWithDebInfo";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\RelWithDebInfo\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/RelWithDebInfo/aws-cpp-sdk-groundstation.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/RelWithDebInfo/aws-cpp-sdk-groundstation.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="MinSizeRel";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_GROUNDSTATION_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";aws_cpp_sdk_groundstation_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\MinSizeRel\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/MinSizeRel/aws-cpp-sdk-groundstation.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/MinSizeRel/aws-cpp-sdk-groundstation.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-groundstation/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\GroundStationClient.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\GroundStationEndpoint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\GroundStationErrorMarshaller.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\GroundStationErrors.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\GroundStationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\GroundStation_EXPORTS.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\AngleUnits.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\AntennaDemodDecodeDetails.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\AntennaDownlinkConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\AntennaDownlinkDemodDecodeConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\AntennaUplinkConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\BandwidthUnits.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CancelContactRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CancelContactResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ConfigCapabilityType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ConfigDetails.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ConfigListItem.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ConfigTypeData.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ContactData.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ContactStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CreateConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CreateConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CreateDataflowEndpointGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CreateDataflowEndpointGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CreateMissionProfileRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\CreateMissionProfileResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Criticality.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DataflowDetail.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DataflowEndpoint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DataflowEndpointConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DataflowEndpointListItem.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DecodeConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DeleteConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DeleteConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DeleteDataflowEndpointGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DeleteDataflowEndpointGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DeleteMissionProfileRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DeleteMissionProfileResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DemodulationConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DependencyException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DescribeContactRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\DescribeContactResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Destination.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Eirp.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\EirpUnits.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Elevation.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\EndpointDetails.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\EndpointStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Frequency.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\FrequencyBandwidth.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\FrequencyUnits.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetDataflowEndpointGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetDataflowEndpointGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetMinuteUsageRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetMinuteUsageResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetMissionProfileRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetMissionProfileResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetSatelliteRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GetSatelliteResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\GroundStationData.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\InvalidParameterException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListConfigsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListConfigsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListContactsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListContactsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListDataflowEndpointGroupsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListDataflowEndpointGroupsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListGroundStationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListGroundStationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListMissionProfilesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListMissionProfilesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListSatellitesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListSatellitesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListTagsForResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ListTagsForResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\MissionProfileListItem.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Polarization.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ReserveContactRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ReserveContactResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\ResourceLimitExceededException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\SatelliteListItem.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\SecurityDetails.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\SocketAddress.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\Source.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\SpectrumConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\TagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\TagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\TrackingConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UntagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UntagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UpdateConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UpdateConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UpdateMissionProfileRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UpdateMissionProfileResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UplinkEchoConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\include\aws\groundstation\model\UplinkSpectrumConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\GroundStationClient.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\GroundStationEndpoint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\GroundStationErrorMarshaller.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\GroundStationErrors.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\AngleUnits.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\AntennaDemodDecodeDetails.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\AntennaDownlinkConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\AntennaDownlinkDemodDecodeConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\AntennaUplinkConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\BandwidthUnits.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CancelContactRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CancelContactResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ConfigCapabilityType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ConfigDetails.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ConfigListItem.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ConfigTypeData.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ContactData.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ContactStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CreateConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CreateConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CreateDataflowEndpointGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CreateDataflowEndpointGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CreateMissionProfileRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\CreateMissionProfileResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Criticality.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DataflowDetail.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DataflowEndpoint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DataflowEndpointConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DataflowEndpointListItem.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DecodeConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DeleteConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DeleteConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DeleteDataflowEndpointGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DeleteDataflowEndpointGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DeleteMissionProfileRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DeleteMissionProfileResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DemodulationConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DependencyException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DescribeContactRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\DescribeContactResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Destination.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Eirp.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\EirpUnits.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Elevation.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\EndpointDetails.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\EndpointStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Frequency.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\FrequencyBandwidth.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\FrequencyUnits.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetDataflowEndpointGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetDataflowEndpointGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetMinuteUsageRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetMinuteUsageResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetMissionProfileRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetMissionProfileResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetSatelliteRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GetSatelliteResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\GroundStationData.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\InvalidParameterException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListConfigsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListConfigsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListContactsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListContactsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListDataflowEndpointGroupsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListDataflowEndpointGroupsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListGroundStationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListGroundStationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListMissionProfilesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListMissionProfilesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListSatellitesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListSatellitesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListTagsForResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ListTagsForResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\MissionProfileListItem.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Polarization.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ReserveContactRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ReserveContactResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\ResourceLimitExceededException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\SatelliteListItem.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\SecurityDetails.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\SocketAddress.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\Source.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\SpectrumConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\TagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\TagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\TrackingConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UntagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UntagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UpdateConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UpdateConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UpdateMissionProfileRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UpdateMissionProfileResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UplinkEchoConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\source\model\UplinkSpectrumConfig.cpp" />
+    <ClCompile Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-groundstation\ub_GROUNDSTATION.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\ZERO_CHECK.vcxproj">
+      <Project>{B3144856-BC54-3AB4-B455-C7E6C69F7D5F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\aws-cpp-sdk-core.vcxproj">
+      <Project>{677ED9C2-5B1E-3B70-8925-66058CD7B12E}</Project>
+      <Name>aws-cpp-sdk-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

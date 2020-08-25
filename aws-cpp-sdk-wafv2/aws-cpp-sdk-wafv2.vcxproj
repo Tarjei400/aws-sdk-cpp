@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugOpt|x64">
+      <Configuration>DebugOpt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{856F535A-2870-3765-83F9-337C93973E69}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>aws-cpp-sdk-wafv2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-wafv2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-wafv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\DebugOpt\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-wafv2.dir\DebugOpt\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-wafv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-wafv2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-wafv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-wafv2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-wafv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-wafv2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-wafv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Debug";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Debug\";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Debug\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/Debug/aws-cpp-sdk-wafv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Debug/aws-cpp-sdk-wafv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="DebugOpt";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"DebugOpt\";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\DebugOpt\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/DebugOpt/aws-cpp-sdk-wafv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/DebugOpt/aws-cpp-sdk-wafv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Release";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Release\";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Release\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/Release/aws-cpp-sdk-wafv2.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Release/aws-cpp-sdk-wafv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="RelWithDebInfo";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\RelWithDebInfo\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/RelWithDebInfo/aws-cpp-sdk-wafv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/RelWithDebInfo/aws-cpp-sdk-wafv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="MinSizeRel";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_WAFV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";aws_cpp_sdk_wafv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\MinSizeRel\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/MinSizeRel/aws-cpp-sdk-wafv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/MinSizeRel/aws-cpp-sdk-wafv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-wafv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\WAFV2Client.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\WAFV2Endpoint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\WAFV2ErrorMarshaller.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\WAFV2Errors.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\WAFV2Request.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\WAFV2_EXPORTS.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\AllQueryArguments.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\AllowAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\AndStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\AssociateWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\AssociateWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\BlockAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Body.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ByteMatchStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CheckCapacityRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CheckCapacityResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ComparisonOperator.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CountAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CountryCode.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateIPSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateIPSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateRegexPatternSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateRegexPatternSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateRuleGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateRuleGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\CreateWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DefaultAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteFirewallManagerRuleGroupsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteFirewallManagerRuleGroupsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteIPSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteIPSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteLoggingConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteLoggingConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeletePermissionPolicyRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeletePermissionPolicyResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteRegexPatternSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteRegexPatternSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteRuleGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteRuleGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DeleteWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DescribeManagedRuleGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DescribeManagedRuleGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DisassociateWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\DisassociateWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ExcludedRule.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\FallbackBehavior.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\FieldToMatch.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\FirewallManagerRuleGroup.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\FirewallManagerStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ForwardedIPConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ForwardedIPPosition.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GeoMatchStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetIPSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetIPSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetLoggingConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetLoggingConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetPermissionPolicyRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetPermissionPolicyResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetRateBasedStatementManagedKeysRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetRateBasedStatementManagedKeysResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetRegexPatternSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetRegexPatternSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetRuleGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetRuleGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetSampledRequestsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetSampledRequestsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetWebACLForResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetWebACLForResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\GetWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\HTTPHeader.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\HTTPRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\IPAddressVersion.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\IPSet.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\IPSetForwardedIPConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\IPSetReferenceStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\IPSetSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListAvailableManagedRuleGroupsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListAvailableManagedRuleGroupsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListIPSetsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListIPSetsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListLoggingConfigurationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListLoggingConfigurationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListRegexPatternSetsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListRegexPatternSetsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListResourcesForWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListResourcesForWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListRuleGroupsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListRuleGroupsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListTagsForResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListTagsForResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListWebACLsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ListWebACLsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\LoggingConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ManagedRuleGroupStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ManagedRuleGroupSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Method.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\NoneAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\NotStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\OrStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\OverrideAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ParameterExceptionField.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\PositionalConstraint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\PutLoggingConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\PutLoggingConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\PutPermissionPolicyRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\PutPermissionPolicyResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\QueryString.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RateBasedStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RateBasedStatementAggregateKeyType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RateBasedStatementManagedKeysIPSet.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Regex.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RegexPatternSet.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RegexPatternSetReferenceStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RegexPatternSetSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\ResourceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Rule.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RuleAction.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RuleGroup.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RuleGroupReferenceStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RuleGroupSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\RuleSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\SampledHTTPRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Scope.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\SingleHeader.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\SingleQueryArgument.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\SizeConstraintStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\SqliMatchStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Statement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\Tag.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\TagInfoForResource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\TagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\TagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\TextTransformation.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\TextTransformationType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\TimeWindow.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UntagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UntagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateIPSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateIPSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateRegexPatternSetRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateRegexPatternSetResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateRuleGroupRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateRuleGroupResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateWebACLRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UpdateWebACLResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\UriPath.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\VisibilityConfig.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\WAFInvalidParameterException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\WebACL.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\WebACLSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\include\aws\wafv2\model\XssMatchStatement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\WAFV2Client.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\WAFV2Endpoint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\WAFV2ErrorMarshaller.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\WAFV2Errors.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\AllQueryArguments.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\AllowAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\AndStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\AssociateWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\AssociateWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\BlockAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Body.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ByteMatchStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CheckCapacityRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CheckCapacityResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ComparisonOperator.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CountAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CountryCode.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateIPSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateIPSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateRegexPatternSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateRegexPatternSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateRuleGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateRuleGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\CreateWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DefaultAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteFirewallManagerRuleGroupsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteFirewallManagerRuleGroupsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteIPSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteIPSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteLoggingConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteLoggingConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeletePermissionPolicyRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeletePermissionPolicyResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteRegexPatternSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteRegexPatternSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteRuleGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteRuleGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DeleteWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DescribeManagedRuleGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DescribeManagedRuleGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DisassociateWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\DisassociateWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ExcludedRule.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\FallbackBehavior.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\FieldToMatch.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\FirewallManagerRuleGroup.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\FirewallManagerStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ForwardedIPConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ForwardedIPPosition.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GeoMatchStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetIPSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetIPSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetLoggingConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetLoggingConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetPermissionPolicyRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetPermissionPolicyResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetRateBasedStatementManagedKeysRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetRateBasedStatementManagedKeysResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetRegexPatternSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetRegexPatternSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetRuleGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetRuleGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetSampledRequestsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetSampledRequestsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetWebACLForResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetWebACLForResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\GetWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\HTTPHeader.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\HTTPRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\IPAddressVersion.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\IPSet.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\IPSetForwardedIPConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\IPSetReferenceStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\IPSetSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListAvailableManagedRuleGroupsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListAvailableManagedRuleGroupsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListIPSetsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListIPSetsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListLoggingConfigurationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListLoggingConfigurationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListRegexPatternSetsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListRegexPatternSetsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListResourcesForWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListResourcesForWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListRuleGroupsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListRuleGroupsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListTagsForResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListTagsForResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListWebACLsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ListWebACLsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\LoggingConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ManagedRuleGroupStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ManagedRuleGroupSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Method.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\NoneAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\NotStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\OrStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\OverrideAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ParameterExceptionField.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\PositionalConstraint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\PutLoggingConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\PutLoggingConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\PutPermissionPolicyRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\PutPermissionPolicyResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\QueryString.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RateBasedStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RateBasedStatementAggregateKeyType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RateBasedStatementManagedKeysIPSet.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Regex.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RegexPatternSet.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RegexPatternSetReferenceStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RegexPatternSetSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\ResourceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Rule.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RuleAction.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RuleGroup.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RuleGroupReferenceStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RuleGroupSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\RuleSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\SampledHTTPRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Scope.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\SingleHeader.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\SingleQueryArgument.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\SizeConstraintStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\SqliMatchStatement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Statement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\Tag.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\TagInfoForResource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\TagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\TagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\TextTransformation.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\TextTransformationType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\TimeWindow.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UntagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UntagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateIPSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateIPSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateRegexPatternSetRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateRegexPatternSetResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateRuleGroupRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateRuleGroupResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateWebACLRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UpdateWebACLResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\UriPath.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\VisibilityConfig.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\WAFInvalidParameterException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\WebACL.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\WebACLSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\source\model\XssMatchStatement.cpp" />
+    <ClCompile Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-wafv2\ub_WAFV2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\ZERO_CHECK.vcxproj">
+      <Project>{B3144856-BC54-3AB4-B455-C7E6C69F7D5F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\aws-cpp-sdk-core.vcxproj">
+      <Project>{677ED9C2-5B1E-3B70-8925-66058CD7B12E}</Project>
+      <Name>aws-cpp-sdk-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

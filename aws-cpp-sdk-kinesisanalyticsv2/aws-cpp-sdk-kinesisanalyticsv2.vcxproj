@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugOpt|x64">
+      <Configuration>DebugOpt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BEFA4903-C2E4-3BCA-A25C-413C234E0B13}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>aws-cpp-sdk-kinesisanalyticsv2</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-kinesisanalyticsv2.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-kinesisanalyticsv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\DebugOpt\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-kinesisanalyticsv2.dir\DebugOpt\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-kinesisanalyticsv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-kinesisanalyticsv2.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-kinesisanalyticsv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-kinesisanalyticsv2.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-kinesisanalyticsv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-kinesisanalyticsv2.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-kinesisanalyticsv2</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Debug";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Debug\";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Debug\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/Debug/aws-cpp-sdk-kinesisanalyticsv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Debug/aws-cpp-sdk-kinesisanalyticsv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="DebugOpt";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"DebugOpt\";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\DebugOpt\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/DebugOpt/aws-cpp-sdk-kinesisanalyticsv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/DebugOpt/aws-cpp-sdk-kinesisanalyticsv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Release";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Release\";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Release\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/Release/aws-cpp-sdk-kinesisanalyticsv2.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Release/aws-cpp-sdk-kinesisanalyticsv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="RelWithDebInfo";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\RelWithDebInfo\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/RelWithDebInfo/aws-cpp-sdk-kinesisanalyticsv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/RelWithDebInfo/aws-cpp-sdk-kinesisanalyticsv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="MinSizeRel";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_KINESISANALYTICSV2_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";aws_cpp_sdk_kinesisanalyticsv2_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\MinSizeRel\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/MinSizeRel/aws-cpp-sdk-kinesisanalyticsv2.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/MinSizeRel/aws-cpp-sdk-kinesisanalyticsv2.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-kinesisanalyticsv2/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\KinesisAnalyticsV2Client.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\KinesisAnalyticsV2Endpoint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\KinesisAnalyticsV2ErrorMarshaller.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\KinesisAnalyticsV2Errors.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\KinesisAnalyticsV2Request.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\KinesisAnalyticsV2_EXPORTS.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationCloudWatchLoggingOptionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationCloudWatchLoggingOptionResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationInputProcessingConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationInputProcessingConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationInputRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationInputResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationOutputRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationOutputResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationReferenceDataSourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationReferenceDataSourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationVpcConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\AddApplicationVpcConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationCodeConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationCodeConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationCodeConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationDetail.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationRestoreConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationRestoreType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationSnapshotConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationSnapshotConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationSnapshotConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ApplicationSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CSVMappingParameters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CheckpointConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CheckpointConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CheckpointConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CloudWatchLoggingOption.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CloudWatchLoggingOptionDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CloudWatchLoggingOptionUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CodeContent.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CodeContentDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CodeContentType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CodeContentUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ConfigurationType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CreateApplicationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CreateApplicationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CreateApplicationSnapshotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\CreateApplicationSnapshotResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationCloudWatchLoggingOptionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationCloudWatchLoggingOptionResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationInputProcessingConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationInputProcessingConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationOutputRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationOutputResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationReferenceDataSourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationReferenceDataSourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationSnapshotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationSnapshotResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationVpcConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DeleteApplicationVpcConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DescribeApplicationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DescribeApplicationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DescribeApplicationSnapshotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DescribeApplicationSnapshotResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DestinationSchema.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DiscoverInputSchemaRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\DiscoverInputSchemaResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\EnvironmentProperties.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\EnvironmentPropertyDescriptions.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\EnvironmentPropertyUpdates.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\FlinkApplicationConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\FlinkApplicationConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\FlinkApplicationConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\FlinkRunConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\Input.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputLambdaProcessor.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputLambdaProcessorDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputLambdaProcessorUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputParallelism.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputParallelismUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputProcessingConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputProcessingConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputProcessingConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputSchemaUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputStartingPosition.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputStartingPositionConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\InputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\JSONMappingParameters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisFirehoseInput.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisFirehoseInputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisFirehoseInputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisFirehoseOutput.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisFirehoseOutputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisFirehoseOutputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisStreamsInput.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisStreamsInputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisStreamsInputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisStreamsOutput.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisStreamsOutputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\KinesisStreamsOutputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\LambdaOutput.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\LambdaOutputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\LambdaOutputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ListApplicationSnapshotsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ListApplicationSnapshotsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ListApplicationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ListApplicationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ListTagsForResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ListTagsForResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\LogLevel.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\MappingParameters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\MetricsLevel.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\MonitoringConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\MonitoringConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\MonitoringConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\Output.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\OutputDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\OutputUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ParallelismConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ParallelismConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ParallelismConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\PropertyGroup.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RecordColumn.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RecordFormat.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RecordFormatType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ReferenceDataSource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ReferenceDataSourceDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\ReferenceDataSourceUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RunConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RunConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RunConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\RuntimeEnvironment.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3ApplicationCodeLocationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3Configuration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3ContentLocation.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3ContentLocationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3ReferenceDataSource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3ReferenceDataSourceDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\S3ReferenceDataSourceUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SnapshotDetails.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SnapshotStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SourceSchema.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SqlApplicationConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SqlApplicationConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SqlApplicationConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\SqlRunConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\StartApplicationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\StartApplicationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\StopApplicationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\StopApplicationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\Tag.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\TagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\TagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\UnableToDetectSchemaException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\UntagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\UntagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\UpdateApplicationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\UpdateApplicationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\VpcConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\VpcConfigurationDescription.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\include\aws\kinesisanalyticsv2\model\VpcConfigurationUpdate.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\KinesisAnalyticsV2Client.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\KinesisAnalyticsV2Endpoint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\KinesisAnalyticsV2ErrorMarshaller.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\KinesisAnalyticsV2Errors.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationCloudWatchLoggingOptionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationCloudWatchLoggingOptionResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationInputProcessingConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationInputProcessingConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationInputRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationInputResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationOutputRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationOutputResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationReferenceDataSourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationReferenceDataSourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationVpcConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\AddApplicationVpcConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationCodeConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationCodeConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationCodeConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationDetail.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationRestoreConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationRestoreType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationSnapshotConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationSnapshotConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationSnapshotConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ApplicationSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CSVMappingParameters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CheckpointConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CheckpointConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CheckpointConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CloudWatchLoggingOption.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CloudWatchLoggingOptionDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CloudWatchLoggingOptionUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CodeContent.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CodeContentDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CodeContentType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CodeContentUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ConfigurationType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CreateApplicationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CreateApplicationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CreateApplicationSnapshotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\CreateApplicationSnapshotResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationCloudWatchLoggingOptionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationCloudWatchLoggingOptionResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationInputProcessingConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationInputProcessingConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationOutputRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationOutputResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationReferenceDataSourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationReferenceDataSourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationSnapshotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationSnapshotResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationVpcConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DeleteApplicationVpcConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DescribeApplicationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DescribeApplicationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DescribeApplicationSnapshotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DescribeApplicationSnapshotResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DestinationSchema.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DiscoverInputSchemaRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\DiscoverInputSchemaResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\EnvironmentProperties.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\EnvironmentPropertyDescriptions.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\EnvironmentPropertyUpdates.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\FlinkApplicationConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\FlinkApplicationConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\FlinkApplicationConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\FlinkRunConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\Input.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputLambdaProcessor.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputLambdaProcessorDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputLambdaProcessorUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputParallelism.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputParallelismUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputProcessingConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputProcessingConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputProcessingConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputSchemaUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputStartingPosition.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputStartingPositionConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\InputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\JSONMappingParameters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisFirehoseInput.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisFirehoseInputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisFirehoseInputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisFirehoseOutput.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisFirehoseOutputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisFirehoseOutputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisStreamsInput.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisStreamsInputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisStreamsInputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisStreamsOutput.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisStreamsOutputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\KinesisStreamsOutputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\LambdaOutput.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\LambdaOutputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\LambdaOutputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ListApplicationSnapshotsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ListApplicationSnapshotsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ListApplicationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ListApplicationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ListTagsForResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ListTagsForResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\LogLevel.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\MappingParameters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\MetricsLevel.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\MonitoringConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\MonitoringConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\MonitoringConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\Output.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\OutputDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\OutputUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ParallelismConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ParallelismConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ParallelismConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\PropertyGroup.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RecordColumn.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RecordFormat.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RecordFormatType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ReferenceDataSource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ReferenceDataSourceDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\ReferenceDataSourceUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RunConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RunConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RunConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\RuntimeEnvironment.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3ApplicationCodeLocationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3Configuration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3ContentLocation.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3ContentLocationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3ReferenceDataSource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3ReferenceDataSourceDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\S3ReferenceDataSourceUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SnapshotDetails.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SnapshotStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SourceSchema.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SqlApplicationConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SqlApplicationConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SqlApplicationConfigurationUpdate.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\SqlRunConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\StartApplicationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\StartApplicationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\StopApplicationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\StopApplicationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\Tag.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\TagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\TagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\UnableToDetectSchemaException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\UntagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\UntagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\UpdateApplicationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\UpdateApplicationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\VpcConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\VpcConfigurationDescription.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\source\model\VpcConfigurationUpdate.cpp" />
+    <ClCompile Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-kinesisanalyticsv2\ub_KINESISANALYTICSV2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\ZERO_CHECK.vcxproj">
+      <Project>{B3144856-BC54-3AB4-B455-C7E6C69F7D5F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\aws-cpp-sdk-core.vcxproj">
+      <Project>{677ED9C2-5B1E-3B70-8925-66058CD7B12E}</Project>
+      <Name>aws-cpp-sdk-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

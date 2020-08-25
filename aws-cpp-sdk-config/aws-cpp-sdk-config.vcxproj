@@ -1,0 +1,913 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugOpt|x64">
+      <Configuration>DebugOpt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9DBB1CF3-F94E-32E7-81A3-507DD5EE2EAF}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>aws-cpp-sdk-config</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-config.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-config</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\DebugOpt\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-config.dir\DebugOpt\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-config</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-config.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-config</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-config.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-config</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-config.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-config</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Debug";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Debug\";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Debug\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/Debug/aws-cpp-sdk-config.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Debug/aws-cpp-sdk-config.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="DebugOpt";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"DebugOpt\";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\DebugOpt\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/DebugOpt/aws-cpp-sdk-config.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/DebugOpt/aws-cpp-sdk-config.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Release";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Release\";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Release\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/Release/aws-cpp-sdk-config.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Release/aws-cpp-sdk-config.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="RelWithDebInfo";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\RelWithDebInfo\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/RelWithDebInfo/aws-cpp-sdk-config.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/RelWithDebInfo/aws-cpp-sdk-config.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="MinSizeRel";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_CONFIGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";aws_cpp_sdk_config_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\MinSizeRel\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/MinSizeRel/aws-cpp-sdk-config.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/MinSizeRel/aws-cpp-sdk-config.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-config/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\ConfigServiceClient.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\ConfigServiceEndpoint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\ConfigServiceErrorMarshaller.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\ConfigServiceErrors.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\ConfigServiceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\ConfigService_EXPORTS.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AccountAggregationSource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregateComplianceByConfigRule.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregateComplianceCount.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregateEvaluationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregateResourceIdentifier.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregatedSourceStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregatedSourceStatusType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregatedSourceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\AggregationAuthorization.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\BaseConfigurationItem.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\BatchGetAggregateResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\BatchGetAggregateResourceConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\BatchGetResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\BatchGetResourceConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ChronologicalOrder.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Compliance.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ComplianceByConfigRule.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ComplianceByResource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ComplianceContributorCount.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ComplianceSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ComplianceSummaryByResourceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ComplianceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigExportDeliveryInfo.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigRule.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigRuleComplianceFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigRuleComplianceSummaryFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigRuleComplianceSummaryGroupKey.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigRuleEvaluationStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigRuleState.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigSnapshotDeliveryProperties.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigStreamDeliveryInfo.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigurationAggregator.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigurationItem.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigurationItemStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigurationRecorder.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConfigurationRecorderStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackComplianceFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackComplianceSummary.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackComplianceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackDetail.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackEvaluationFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackEvaluationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackInputParameter.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackRuleCompliance.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackState.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ConformancePackStatusDetail.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteAggregationAuthorizationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteConfigurationAggregatorRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteConfigurationRecorderRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteConformancePackRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteDeliveryChannelRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteEvaluationResultsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteEvaluationResultsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteOrganizationConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteOrganizationConformancePackRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeletePendingAggregationRequestRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteRemediationConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteRemediationConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteRemediationExceptionsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteRemediationExceptionsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeleteRetentionConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeliverConfigSnapshotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeliverConfigSnapshotResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeliveryChannel.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeliveryChannelStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DeliveryStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeAggregateComplianceByConfigRulesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeAggregateComplianceByConfigRulesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeAggregationAuthorizationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeAggregationAuthorizationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeComplianceByConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeComplianceByConfigRuleResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeComplianceByResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeComplianceByResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigRuleEvaluationStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigRuleEvaluationStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigRulesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigRulesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationAggregatorSourcesStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationAggregatorSourcesStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationAggregatorsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationAggregatorsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationRecorderStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationRecorderStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationRecordersRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConfigurationRecordersResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConformancePackComplianceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConformancePackComplianceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConformancePackStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConformancePackStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConformancePacksRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeConformancePacksResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeDeliveryChannelStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeDeliveryChannelStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeDeliveryChannelsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeDeliveryChannelsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConfigRuleStatusesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConfigRuleStatusesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConfigRulesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConfigRulesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConformancePackStatusesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConformancePackStatusesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConformancePacksRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeOrganizationConformancePacksResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribePendingAggregationRequestsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribePendingAggregationRequestsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRemediationConfigurationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRemediationConfigurationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRemediationExceptionsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRemediationExceptionsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRemediationExecutionStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRemediationExecutionStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRetentionConfigurationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\DescribeRetentionConfigurationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Evaluation.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\EvaluationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\EvaluationResultIdentifier.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\EvaluationResultQualifier.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\EventSource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ExecutionControls.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\FailedDeleteRemediationExceptionsBatch.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\FailedRemediationBatch.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\FailedRemediationExceptionBatch.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\FieldInfo.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateComplianceDetailsByConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateComplianceDetailsByConfigRuleResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateConfigRuleComplianceSummaryRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateConfigRuleComplianceSummaryResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateDiscoveredResourceCountsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateDiscoveredResourceCountsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetAggregateResourceConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceDetailsByConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceDetailsByConfigRuleResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceDetailsByResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceDetailsByResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceSummaryByConfigRuleResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceSummaryByResourceTypeRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetComplianceSummaryByResourceTypeResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetConformancePackComplianceDetailsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetConformancePackComplianceDetailsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetConformancePackComplianceSummaryRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetConformancePackComplianceSummaryResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetDiscoveredResourceCountsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetDiscoveredResourceCountsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetOrganizationConfigRuleDetailedStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetOrganizationConfigRuleDetailedStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetOrganizationConformancePackDetailedStatusRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetOrganizationConformancePackDetailedStatusResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetResourceConfigHistoryRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GetResourceConfigHistoryResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\GroupedResourceCount.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ListAggregateDiscoveredResourcesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ListAggregateDiscoveredResourcesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ListDiscoveredResourcesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ListDiscoveredResourcesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ListTagsForResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ListTagsForResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\MaximumExecutionFrequency.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\MemberAccountRuleStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\MemberAccountStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\MessageType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationAggregationSource.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationConfigRule.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationConfigRuleStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationConfigRuleTriggerType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationConformancePack.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationConformancePackDetailedStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationConformancePackStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationCustomRuleMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationManagedRuleMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationResourceDetailedStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationResourceDetailedStatusFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationResourceStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\OrganizationRuleStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Owner.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PendingAggregationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutAggregationAuthorizationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutAggregationAuthorizationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutConfigurationAggregatorRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutConfigurationAggregatorResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutConfigurationRecorderRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutConformancePackRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutConformancePackResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutDeliveryChannelRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutEvaluationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutEvaluationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutOrganizationConfigRuleRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutOrganizationConfigRuleResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutOrganizationConformancePackRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutOrganizationConformancePackResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutRemediationConfigurationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutRemediationConfigurationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutRemediationExceptionsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutRemediationExceptionsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutRetentionConfigurationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\PutRetentionConfigurationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\QueryInfo.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RecorderStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RecordingGroup.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Relationship.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationExceptionResourceKey.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationExecutionState.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationExecutionStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationExecutionStep.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationExecutionStepState.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationParameterValue.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RemediationTargetType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceCount.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceCountFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceCountGroupKey.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceIdentifier.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceKey.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceValue.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\ResourceValueType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\RetentionConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Scope.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\SelectAggregateResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\SelectAggregateResourceConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\SelectResourceConfigRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\SelectResourceConfigResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Source.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\SourceDetail.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\SsmControls.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StartConfigRulesEvaluationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StartConfigRulesEvaluationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StartConfigurationRecorderRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StartRemediationExecutionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StartRemediationExecutionResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StaticValue.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StatusDetailFilters.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\StopConfigurationRecorderRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\Tag.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\TagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\include\aws\config\model\UntagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\ConfigServiceClient.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\ConfigServiceEndpoint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\ConfigServiceErrorMarshaller.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\ConfigServiceErrors.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AccountAggregationSource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregateComplianceByConfigRule.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregateComplianceCount.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregateEvaluationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregateResourceIdentifier.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregatedSourceStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregatedSourceStatusType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregatedSourceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\AggregationAuthorization.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\BaseConfigurationItem.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\BatchGetAggregateResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\BatchGetAggregateResourceConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\BatchGetResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\BatchGetResourceConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ChronologicalOrder.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Compliance.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ComplianceByConfigRule.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ComplianceByResource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ComplianceContributorCount.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ComplianceSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ComplianceSummaryByResourceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ComplianceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigExportDeliveryInfo.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigRule.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigRuleComplianceFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigRuleComplianceSummaryFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigRuleComplianceSummaryGroupKey.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigRuleEvaluationStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigRuleState.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigSnapshotDeliveryProperties.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigStreamDeliveryInfo.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigurationAggregator.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigurationItem.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigurationItemStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigurationRecorder.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConfigurationRecorderStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackComplianceFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackComplianceSummary.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackComplianceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackDetail.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackEvaluationFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackEvaluationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackInputParameter.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackRuleCompliance.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackState.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ConformancePackStatusDetail.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteAggregationAuthorizationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteConfigurationAggregatorRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteConfigurationRecorderRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteConformancePackRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteDeliveryChannelRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteEvaluationResultsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteEvaluationResultsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteOrganizationConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteOrganizationConformancePackRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeletePendingAggregationRequestRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteRemediationConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteRemediationConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteRemediationExceptionsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteRemediationExceptionsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeleteRetentionConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeliverConfigSnapshotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeliverConfigSnapshotResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeliveryChannel.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeliveryChannelStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DeliveryStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeAggregateComplianceByConfigRulesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeAggregateComplianceByConfigRulesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeAggregationAuthorizationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeAggregationAuthorizationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeComplianceByConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeComplianceByConfigRuleResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeComplianceByResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeComplianceByResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigRuleEvaluationStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigRuleEvaluationStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigRulesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigRulesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationAggregatorSourcesStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationAggregatorSourcesStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationAggregatorsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationAggregatorsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationRecorderStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationRecorderStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationRecordersRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConfigurationRecordersResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConformancePackComplianceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConformancePackComplianceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConformancePackStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConformancePackStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConformancePacksRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeConformancePacksResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeDeliveryChannelStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeDeliveryChannelStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeDeliveryChannelsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeDeliveryChannelsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConfigRuleStatusesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConfigRuleStatusesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConfigRulesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConfigRulesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConformancePackStatusesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConformancePackStatusesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConformancePacksRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeOrganizationConformancePacksResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribePendingAggregationRequestsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribePendingAggregationRequestsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRemediationConfigurationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRemediationConfigurationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRemediationExceptionsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRemediationExceptionsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRemediationExecutionStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRemediationExecutionStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRetentionConfigurationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\DescribeRetentionConfigurationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Evaluation.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\EvaluationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\EvaluationResultIdentifier.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\EvaluationResultQualifier.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\EventSource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ExecutionControls.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\FailedDeleteRemediationExceptionsBatch.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\FailedRemediationBatch.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\FailedRemediationExceptionBatch.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\FieldInfo.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateComplianceDetailsByConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateComplianceDetailsByConfigRuleResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateConfigRuleComplianceSummaryRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateConfigRuleComplianceSummaryResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateDiscoveredResourceCountsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateDiscoveredResourceCountsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetAggregateResourceConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceDetailsByConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceDetailsByConfigRuleResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceDetailsByResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceDetailsByResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceSummaryByConfigRuleResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceSummaryByResourceTypeRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetComplianceSummaryByResourceTypeResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetConformancePackComplianceDetailsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetConformancePackComplianceDetailsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetConformancePackComplianceSummaryRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetConformancePackComplianceSummaryResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetDiscoveredResourceCountsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetDiscoveredResourceCountsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetOrganizationConfigRuleDetailedStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetOrganizationConfigRuleDetailedStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetOrganizationConformancePackDetailedStatusRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetOrganizationConformancePackDetailedStatusResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetResourceConfigHistoryRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GetResourceConfigHistoryResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\GroupedResourceCount.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ListAggregateDiscoveredResourcesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ListAggregateDiscoveredResourcesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ListDiscoveredResourcesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ListDiscoveredResourcesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ListTagsForResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ListTagsForResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\MaximumExecutionFrequency.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\MemberAccountRuleStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\MemberAccountStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\MessageType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationAggregationSource.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationConfigRule.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationConfigRuleStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationConfigRuleTriggerType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationConformancePack.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationConformancePackDetailedStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationConformancePackStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationCustomRuleMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationManagedRuleMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationResourceDetailedStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationResourceDetailedStatusFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationResourceStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\OrganizationRuleStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Owner.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PendingAggregationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutAggregationAuthorizationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutAggregationAuthorizationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutConfigurationAggregatorRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutConfigurationAggregatorResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutConfigurationRecorderRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutConformancePackRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutConformancePackResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutDeliveryChannelRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutEvaluationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutEvaluationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutOrganizationConfigRuleRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutOrganizationConfigRuleResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutOrganizationConformancePackRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutOrganizationConformancePackResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutRemediationConfigurationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutRemediationConfigurationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutRemediationExceptionsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutRemediationExceptionsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutRetentionConfigurationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\PutRetentionConfigurationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\QueryInfo.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RecorderStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RecordingGroup.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Relationship.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationExceptionResourceKey.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationExecutionState.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationExecutionStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationExecutionStep.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationExecutionStepState.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationParameterValue.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RemediationTargetType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceCount.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceCountFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceCountGroupKey.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceIdentifier.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceKey.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceValue.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\ResourceValueType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\RetentionConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Scope.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\SelectAggregateResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\SelectAggregateResourceConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\SelectResourceConfigRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\SelectResourceConfigResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Source.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\SourceDetail.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\SsmControls.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StartConfigRulesEvaluationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StartConfigRulesEvaluationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StartConfigurationRecorderRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StartRemediationExecutionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StartRemediationExecutionResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StaticValue.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StatusDetailFilters.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\StopConfigurationRecorderRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\Tag.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\TagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\source\model\UntagResourceRequest.cpp" />
+    <ClCompile Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-config\ub_CONFIG.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\ZERO_CHECK.vcxproj">
+      <Project>{B3144856-BC54-3AB4-B455-C7E6C69F7D5F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\aws-cpp-sdk-core.vcxproj">
+      <Project>{677ED9C2-5B1E-3B70-8925-66058CD7B12E}</Project>
+      <Name>aws-cpp-sdk-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

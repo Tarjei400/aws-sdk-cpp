@@ -1,0 +1,663 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugOpt|x64">
+      <Configuration>DebugOpt</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{86DDFCAC-C4DA-320A-828E-CFCFC4495986}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>aws-cpp-sdk-lex-models</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-lex-models.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">aws-cpp-sdk-lex-models</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\DebugOpt\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-lex-models.dir\DebugOpt\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">aws-cpp-sdk-lex-models</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-lex-models.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">aws-cpp-sdk-lex-models</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-lex-models.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">aws-cpp-sdk-lex-models</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-lex-models.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">aws-cpp-sdk-lex-models</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Debug";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Debug\";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Debug\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/Debug/aws-cpp-sdk-lex-models.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Debug/aws-cpp-sdk-lex-models.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="DebugOpt";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"DebugOpt\";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\DebugOpt\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/DebugOpt/aws-cpp-sdk-lex-models.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/DebugOpt/aws-cpp-sdk-lex-models.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="Release";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"Release\";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\Release\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/Release/aws-cpp-sdk-lex-models.lib</ImportLibrary>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/Release/aws-cpp-sdk-lex-models.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="RelWithDebInfo";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"RelWithDebInfo\";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\RelWithDebInfo\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/RelWithDebInfo/aws-cpp-sdk-lex-models.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/RelWithDebInfo/aws-cpp-sdk-lex-models.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR="MinSizeRel";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;AWS_LEXMODELBUILDINGSERVICE_EXPORTS;PLATFORM_WINDOWS;ENABLE_BCRYPT_ENCRYPTION;ENABLE_WINDOWS_CLIENT;AWS_SDK_VERSION_MAJOR=1;AWS_SDK_VERSION_MINOR=8;AWS_SDK_VERSION_PATCH=34;USE_WINDOWS_DLL_SEMANTICS;USE_IMPORT_EXPORT=1;AWS_EVENT_STREAM_USE_IMPORT_EXPORT;AWS_COMMON_USE_IMPORT_EXPORT;CMAKE_INTDIR=\"MinSizeRel\";aws_cpp_sdk_lex_models_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include;C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\include;C:\Users\isaac\Projects\aws-sdk-cpp\.deps\install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>Userenv.lib;version.lib;ws2_32.lib;..\aws-cpp-sdk-core\MinSizeRel\aws-cpp-sdk-core.lib;..\.deps\install\lib\aws-c-event-stream.lib;..\.deps\install\lib\aws-c-common.lib;BCrypt.lib;Kernel32.lib;Ws2_32.lib;..\.deps\install\lib\aws-checksums.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/MinSizeRel/aws-cpp-sdk-lex-models.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/isaac/Projects/aws-sdk-cpp/bin/MinSizeRel/aws-cpp-sdk-lex-models.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='DebugOpt|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/isaac/Projects/aws-sdk-cpp -BC:/Users/isaac/Projects/aws-sdk-cpp --check-stamp-file C:/Users/isaac/Projects/aws-sdk-cpp/aws-cpp-sdk-lex-models/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\BasicConfigVersion-AnyNewerVersion.cmake.in;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\Platform\Windows-MSVC.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\CMakeFiles\3.18.2\CMakeCCompiler.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\cmakeProjectConfig.cmake;C:\Users\isaac\Projects\aws-sdk-cpp\toolchains\pkg-config.pc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\LexModelBuildingServiceClient.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\LexModelBuildingServiceEndpoint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\LexModelBuildingServiceErrorMarshaller.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\LexModelBuildingServiceErrors.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\LexModelBuildingServiceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\LexModelBuildingService_EXPORTS.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\BotAliasMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\BotChannelAssociation.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\BotMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\BuiltinIntentMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\BuiltinIntentSlot.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\BuiltinSlotTypeMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ChannelStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ChannelType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CodeHook.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ContentType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ConversationLogsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ConversationLogsResponse.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CreateBotVersionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CreateBotVersionResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CreateIntentVersionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CreateIntentVersionResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CreateSlotTypeVersionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\CreateSlotTypeVersionResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteBotAliasRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteBotChannelAssociationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteBotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteBotVersionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteIntentRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteIntentVersionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteSlotTypeRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteSlotTypeVersionRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\DeleteUtterancesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Destination.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\EnumerationValue.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ExportStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ExportType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\FollowUpPrompt.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\FulfillmentActivity.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\FulfillmentActivityType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotAliasRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotAliasResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotAliasesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotAliasesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotChannelAssociationRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotChannelAssociationResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotChannelAssociationsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotChannelAssociationsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotVersionsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotVersionsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBotsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBuiltinIntentRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBuiltinIntentResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBuiltinIntentsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBuiltinIntentsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBuiltinSlotTypesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetBuiltinSlotTypesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetExportRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetExportResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetImportRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetImportResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetIntentRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetIntentResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetIntentVersionsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetIntentVersionsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetIntentsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetIntentsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetSlotTypeRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetSlotTypeResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetSlotTypeVersionsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetSlotTypeVersionsResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetSlotTypesRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetSlotTypesResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetUtterancesViewRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\GetUtterancesViewResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ImportStatus.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Intent.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\IntentMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\KendraConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\LimitExceededException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ListTagsForResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ListTagsForResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Locale.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\LogSettingsRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\LogSettingsResponse.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\LogType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\MergeStrategy.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Message.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ObfuscationSetting.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ProcessBehavior.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Prompt.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutBotAliasRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutBotAliasResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutBotRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutBotResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutIntentRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutIntentResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutSlotTypeRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\PutSlotTypeResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ReferenceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ResourceInUseException.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ResourceReference.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\ResourceType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Slot.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\SlotConstraint.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\SlotTypeConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\SlotTypeMetadata.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\SlotTypeRegexConfiguration.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\SlotValueSelectionStrategy.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\StartImportRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\StartImportResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Statement.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Status.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\StatusType.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\Tag.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\TagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\TagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\UntagResourceRequest.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\UntagResourceResult.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\UtteranceData.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\include\aws\lex-models\model\UtteranceList.h" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\LexModelBuildingServiceClient.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\LexModelBuildingServiceEndpoint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\LexModelBuildingServiceErrorMarshaller.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\LexModelBuildingServiceErrors.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\BotAliasMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\BotChannelAssociation.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\BotMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\BuiltinIntentMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\BuiltinIntentSlot.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\BuiltinSlotTypeMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ChannelStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ChannelType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CodeHook.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ContentType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ConversationLogsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ConversationLogsResponse.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CreateBotVersionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CreateBotVersionResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CreateIntentVersionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CreateIntentVersionResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CreateSlotTypeVersionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\CreateSlotTypeVersionResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteBotAliasRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteBotChannelAssociationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteBotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteBotVersionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteIntentRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteIntentVersionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteSlotTypeRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteSlotTypeVersionRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\DeleteUtterancesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Destination.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\EnumerationValue.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ExportStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ExportType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\FollowUpPrompt.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\FulfillmentActivity.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\FulfillmentActivityType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotAliasRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotAliasResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotAliasesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotAliasesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotChannelAssociationRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotChannelAssociationResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotChannelAssociationsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotChannelAssociationsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotVersionsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotVersionsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBotsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBuiltinIntentRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBuiltinIntentResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBuiltinIntentsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBuiltinIntentsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBuiltinSlotTypesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetBuiltinSlotTypesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetExportRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetExportResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetImportRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetImportResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetIntentRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetIntentResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetIntentVersionsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetIntentVersionsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetIntentsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetIntentsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetSlotTypeRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetSlotTypeResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetSlotTypeVersionsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetSlotTypeVersionsResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetSlotTypesRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetSlotTypesResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetUtterancesViewRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\GetUtterancesViewResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ImportStatus.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Intent.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\IntentMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\KendraConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\LimitExceededException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ListTagsForResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ListTagsForResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Locale.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\LogSettingsRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\LogSettingsResponse.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\LogType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\MergeStrategy.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Message.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ObfuscationSetting.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ProcessBehavior.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Prompt.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutBotAliasRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutBotAliasResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutBotRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutBotResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutIntentRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutIntentResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutSlotTypeRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\PutSlotTypeResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ReferenceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ResourceInUseException.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ResourceReference.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\ResourceType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Slot.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\SlotConstraint.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\SlotTypeConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\SlotTypeMetadata.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\SlotTypeRegexConfiguration.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\SlotValueSelectionStrategy.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\StartImportRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\StartImportResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Statement.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Status.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\StatusType.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\Tag.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\TagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\TagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\UntagResourceRequest.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\UntagResourceResult.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\UtteranceData.cpp" />
+    <ClInclude Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\source\model\UtteranceList.cpp" />
+    <ClCompile Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-lex-models\ub_LEX-MODELS.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\ZERO_CHECK.vcxproj">
+      <Project>{B3144856-BC54-3AB4-B455-C7E6C69F7D5F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\isaac\Projects\aws-sdk-cpp\aws-cpp-sdk-core\aws-cpp-sdk-core.vcxproj">
+      <Project>{677ED9C2-5B1E-3B70-8925-66058CD7B12E}</Project>
+      <Name>aws-cpp-sdk-core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
